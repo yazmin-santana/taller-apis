@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Buscar Personaje -->
+    <div class="search-container">
+        <input class="form-control" type="search" placeholder="Ingresa el ID o nombre del personaje" id="searchCharacterInput">
+        <button id="searchCharacterButton">Buscar Personaje</button>
+    </div>
+    <div class="container mt-5">
+        <div id="characterCard" class="card" style="display: none;">
+            <img id="characterImage" class="card-img-top" src="" alt="Imagen del personaje">
+            <div class="card-body">
+                <h5 id="characterName" class="card-title">Nombre del Personaje</h5>
+                <p id="characterStatus" class="card-text">Estado: </p>
+                <p id="characterSpecies" class="card-text">Especie: </p>
+                <p id="characterGender" class="card-text">Género: </p>
+                <p id="characterOrigin" class="card-text">Origen: </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Buscar Episodio -->
+    <div class="search-container">
+        <input class="form-control" type="search" placeholder="Ingresa el ID o nombre del episodio" id="searchEpisodeInput">
+        <button id="searchEpisodeButton">Buscar Episodio</button>
+    </div>
+    <div class="container mt-5">
+        <div id="episodeCard" class="card" style="display: none;">
+            <div class="card-body">
+                <h5 id="episodeName" class="card-title">Nombre del Episodio</h5>
+                <p id="episodeAirDate" class="card-text">Fecha de emisión: </p>
+                <p id="episodeCode" class="card-text">Código de Episodio: </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
